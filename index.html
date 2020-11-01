@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styling/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer></script>
+        <title>
+            Visualize
+        </title>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-header">
+                    <div class="navbar-brand">Visualize</div>
+                </div>
+
+                <ul class="nav navbar-nav">
+
+                    <!-- Algorithms list -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Algorithms
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                            <!-- Traversing Algorithm menu -->
+                            <li class="dropright">
+                                <a  class="dropright-toggle" href="#">Traversing
+                                    <span class="caret caret-right"></span></a>
+                                <ul class="dropright-submenu">
+                                    <li><a href="#">Breadth First Search</a></li>
+                                    <li><a href="#">Depth First Search</a></li>
+                                </ul>
+                            </li>
+                            <!-- Traversing Algorithm menu end -->
+                            <!-- Shortest Path Submenu -->
+                            <li class="dropright">
+                                <a  class="dropright-toggle" href="#">Shortest Path
+                                <span class="caret caret-right"></span></a>
+                                <ul class="dropright-submenu">
+                                    <li><a href="#">Dijkstra</a></li>
+                                    <li><a href="#">Priems</a></li>
+                                </ul>
+                            </li> 
+                            <!-- Shortest Path menu end -->
+                        </ul>
+                    </li>
+                    <!-- Algorithm list ends -->
+                    
+                    <button class="btn navbar-btn" id="visualize-btn">Start BFS</button>
+                    
+                    <!-- Maze generation list -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Maze Generation
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Randomized</a></li>
+                        </ul>
+                    </li>
+                    <!-- Maze generation ends -->
+
+                    <!-- Speed control -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Speed Control
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Slow</a></li>
+                            <li><a href="">Medium</a></li>
+                            <li><a href="">Fast</a></li>
+                            <li><a href="">Very fast</a></li>
+                        </ul>
+                    </li>
+                    <!-- speed control ends -->
+                    
+                    <li class="clear-btn"><a href="">Clear All</a></li>
+                </ul>
+            </div>
+            <!-- Navbar ends -->
+
+            <div class="grid-area .container" style="border: 1px solid black;">
+                
+            </div>                
+        </div>
+    </body>
+</html>
