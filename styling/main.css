@@ -99,6 +99,18 @@ body {
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
+.make-source {
+    animation-name: source-animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.make-end {
+    animation-name: end-animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
 
 
 
@@ -132,3 +144,36 @@ body {
         transform: scale(1);
     }
 }
+
+@keyframes source-animation {
+    50% {
+        transform: scale(0.8);
+    }
+    75% {
+        transform: scale(1.6);
+    }
+    100% {
+        background-image: url("./../assets/source.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: scale(1);
+    }
+}
+
+@keyframes end-animation {
+    50% {
+        transform: scale(0.8);
+    }
+    75% {
+        transform: scale(1.6);
+    }
+    100% {
+        background-image: url("./../assets/destination.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: scale(1);
+    }
+}
+
