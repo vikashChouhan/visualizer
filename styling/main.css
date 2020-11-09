@@ -78,7 +78,7 @@ body {
 }
 
 #visualize-btn {
-    width: 100px;
+    min-width: 100px;
     margin-left: 50px;
 }
 

@@ -14,6 +14,9 @@ export function Board() {
     this.mouseDownOnCell = false;
     this.mouseDownOnSourcePoint = false;
     this.mouseDownOnEndPoint = false;
+    this.algoToRun = "";
+    this.speed = "medium";
+    this.mazeType = "";
 }
 
 Board.prototype.initilize = function (cellSize, height) {
@@ -128,6 +131,30 @@ Board.prototype.addEventListeners = function () {
                         ele.isEnd = !ele.isEnd;
                     }
                 }
+            }
+        }
+    }
+}
+
+Board.prototype.clearAll = function() {
+    this.startPosR = 0;
+    this.startPosC = 0;
+    this.endPosR = 0;
+    this.endPosC = 0;
+    this.algoToRun = "";
+    this.speed = "medium";
+    this.mazeType = "";
+
+    this.removeWalls();
+}
+
+
+Board.prototype.removeWalls = function() {
+    for (let i=0 ;i<this.board.length; i++) {
+        for(let j=0; j<this.board[i].length; j++) {
+            let cell = this.board[i][j];
+            if(cell.isWall) {
+                cell.element.classList.remove("make-wall");
             }
         }
     }
